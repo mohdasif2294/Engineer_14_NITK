@@ -1,0 +1,39 @@
+<script>
+	$(".content").load("events/bizEvents/caseStudy.html")
+	$('.csc a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/bizEvents/caseStudy.html")
+	})
+	$('.gmp a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/bizEvents/greenChallenge.html")
+	})
+	$('.csi a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/bizEvents/campusSocial.html")
+	})
+	$('.adventure a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/bizEvents/adventure.html")
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="miningEevnts">
+	<img class="img-responsive" style="height:15em;width:100%;" src="img/Biz.jpg"/>
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="csc"><a href="#">Case Study Challenge</a></li>
+		<li class="gmp"><a href="#">Green Mining Problem</a></li>
+		<li class="csi"><a href="#">Campus Social Innitiative</a></li>
+		<li class="adventure"><a href="#">Adventure</a></li>
+	</ul>
+	<div class="content">
+	</div>
+</div>

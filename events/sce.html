@@ -1,0 +1,39 @@
+<script>
+	$(".content").load("events/sce/lastWord.html")
+	$('.lastWord a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/sce/lastWord.html")
+	})
+	$('.sparsh a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/sce/sparsh.html")
+	})
+	$('.skyLantern a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/sce/skyLantern.html")
+	})
+	$('.indiaInnovates a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/sce/indianInnovates.html")
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="sce">
+	<img class="img-responsive img-rounded" style="height:15em;width:100%;" src="img/SCE.jpg"/>
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="lastWord"><a href="#">Last Word</a></li>
+		<li class="sparsh"><a href="#">Sparsh</a></li>
+		<li class="skyLantern"><a href="#">Sky Lantern</a></li>
+		<li class="indiaInnovates"><a href="#">India Innovates</a></li>
+	</ul>
+	<div class="content" id="scrollbox3">
+	</div>
+</div>

@@ -1,0 +1,39 @@
+<script>
+	$(".content").load("events/metaEvents/metaMagic.html")
+	$('.metaMagic a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/metaEvents/metaMagic.html")
+	})
+	$('.mindBend a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/metaEvents/mindBend.html")
+	})
+	$('.ste a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/metaEvents/semExpo.html")
+	})
+	$('.stp a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/metaEvents/semPhoto.html")
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="metaEvents">
+	<img class="img-responsive" style="height:15em;width:100%;" src="img/Meta.jpg"/>
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="metaMagic"><a href="#">Meta Magic</a></li>
+		<li class="mindBend"><a href="#">Mind Bend</a></li>
+		<li class="ste"><a href="#">Sem Tem Expo</a></li>
+		<li class="stp"><a href="#">Sem Temp Photography</a></li>
+	</ul>
+	<div class="content">
+	</div>
+</div>

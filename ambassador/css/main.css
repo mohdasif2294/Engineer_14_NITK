@@ -1,0 +1,176 @@
+@font-face {
+  font-family:'spaceage';
+  src: url('../font/spaceage.eot?') format('eot'), 
+  url('../font/spaceage.woff') format('woff'), 
+  url('../font/spaceage.ttf') format('truetype');
+}
+
+
+body{
+	height: 100%;
+	width: 100%;
+}
+.navbar-nav > li > a:hover {
+   // color: white !important;
+}
+.navbar-nav > li:hover {
+   // background-color: black;
+    //font-size: 16px;
+}
+.right_bar{
+	//height:50%;
+	//float:right;
+	//margin-right:12%;
+	//margin-top:5%;
+	//overflow: scroll;
+}
+
+.marquee {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #ccc;
+  margin-top:-1.7%;
+}
+
+.main_content {
+margin-top:2%;
+//max-height:10%;`
+}
+
+.center_content {
+//background-color:teal;
+overflow:auto;
+height:440px;
+
+}
+
+.left_bar {
+overflow:auto;
+margin-left:1.4%;
+
+}
+
+.sponsor_row {
+margin-bottom:1.7%;
+padding:2px;
+}
+
+	
+nav a {
+	position: relative;
+	display: inline-block;
+	//margin: 15px 25px;
+	outline: none;
+	//color: #fff;
+	//text-decoration: none;
+	//text-transform: uppercase;
+	//letter-spacing: 1px;
+	//font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	//font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+/* Effect 10: reveal, push out */
+.cl-effect-10  {
+	position: relative;
+	z-index: 1;
+}
+
+.cl-effect-10 a {
+	overflow: hidden;
+	//color:white;
+	//margin: 0 15px;
+}
+
+.cl-effect-10 a span {
+	display: block;
+	padding: 4px 5px;
+	background: #cccccc;
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+	//overflow:hidden;
+}
+.bod{
+	background:-webkit-radial-gradient(#ffffff,#cccccc);
+	background:radial-gradient(#ffffff, #cccccc);
+	background:-moz-radial-gradient(#ffffff, #cccccc);
+	background:-o-radial-gradient(#ffffff, #cccccc);
+	background-position: center center; 
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	height:100vh;
+	overflow:hidden !important;
+	  }
+
+.cl-effect-10 a::before {
+	position: absolute;
+	//top: 0;
+	//left: 0;
+	z-index: -1;
+	padding: 4px 5px;
+	//width: 100%;
+	//height: 100%;
+	background: #333;
+	color: #cccccc;
+	content: attr(data-hover);
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateX(-25%);
+}
+
+.cl-effect-10 a:hover span,
+.cl-effect-10 a:focus span {
+	-webkit-transform: translateX(141%);
+	-moz-transform: translateX(141%);
+	transform: translateX(141%);
+}
+
+.cl-effect-10 a:hover::before,
+.cl-effect-10 a:focus::before {
+	-webkit-transform: translateX(0%);
+	-moz-transform: translateX(0%);
+	transform: translateX(0%);
+}
+
+.campus{
+//background-color:black;
+background-image:url('images/SBI.jpg');
+}
+.content_1{
+//border-color:white;
+//border-width:2px;
+border-radius:3px;
+//border-style:solid;
+color:white;
+font-size:15px;
+background-color:#00d0ba;
+margin-top:1%;
+font-family:Helvetica;
+padding:0.7%;
+padding-top:1.1%;
+padding-bottom:0.4%;
+padding-left:1.6%;
+font-weight:400;
+//box-shadow:white 4px 5px 2px 4px;
+line-height:18px;
+}
+
+.mai_con{
+background-color:white;
+color:#00d0ba;
+margin-top:14%;
+padding:2%;
+border-radius:8px;
+text-align:center
+}
+.content_1 li{
+list-style:square;
+}
+

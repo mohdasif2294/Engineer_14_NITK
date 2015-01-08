@@ -1,0 +1,39 @@
+<script>
+	$(".content").load("events/civilEvents/colossus.html")
+	$('.colossus a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/civilEvents/colossus.html")
+	})
+	$('.architect a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/civilEvents/architect.html")
+	})
+	$('.mindBend a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/civilEvents/mindBend.html")
+	})
+	$('.nirvana a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/civilEvents/nirvana.html")
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="miningEevnts">
+	<img class="img-responsive" style="height:15em;width:100%;" src="img/Civil.jpg"/>
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="colossus"><a href="#">Colossus</a></li>
+		<li class="architect"><a href="#">Architect</a></li>
+		<li class="mindBend"><a href="#">Mind Bend</a></li>
+		<li class="nirvana"><a href="#">Nirvana</a></li>
+	</ul>
+	<div class="content">
+	</div>
+</div>

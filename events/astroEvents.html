@@ -1,0 +1,39 @@
+<script>
+	$(".content").load("events/astroEvents/astroTalk.html")
+	$('.astroTalk a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/astroEvents/astroTalk.html")
+	})
+	$('.starWars a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/astroEvents/starWars.html")
+	})
+	$('.beyondEarth a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/astroEvents/beyondEarth.html")
+	})
+	$('.exhibit a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/astroEvents/exhibits.html")
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="astroEvents">
+	<img class="img-responsive" style="height:15em;width:100%;" src="img/Astro.jpg"/>
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="astroTalk"><a href="#">Astro Talk</a></li>
+		<li class="starWars"><a href="#">Star Wars</a></li>
+		<li class="beyondEarth"><a href="#">Beyond Earth</a></li>
+		<li class="exhibit"><a href="#">Exhibits</a></li>
+	</ul>
+	<div class="content">
+	</div>
+</div>

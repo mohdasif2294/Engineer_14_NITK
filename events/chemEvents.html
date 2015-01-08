@@ -1,0 +1,39 @@
+<script>
+	$(".content").load("events/chemEvents/chemBreakdown.html")
+	$('.chemBreakdown a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/chemEvents/chemBreakdown.html")
+	})
+	$('.IDP a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/chemEvents/industryProblem.html")
+	})
+	$('.portal a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/chemEvents/portal.html")
+	})
+	$('.contraption a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/chemEvents/contraption.html")
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="chemEvents">
+	<img class="img-responsive img-rounded" style="height:15em;width:100%;" src="img/Chemical.jpg"/>
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="chemBreakdown"><a href="#">Chemical Breakdown</a></li>
+		<li class="IDP"><a href="#">Industry Defined Problem</a></li>
+		<li class="portal"><a href="#">The Portal</a></li>
+		<li class="contraption"><a href="#">Contraption</a></li>
+	</ul>
+	<div class="content" id="scrollbox3">
+	</div>
+</div>

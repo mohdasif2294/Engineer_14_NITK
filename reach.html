@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+<head>
+<title>Engineer 2014 | Reach</title>
+
+<!--Meta-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >  
+<meta charset="UTF-8" > 
+<meta name="language" content="english" >
+<meta name="description" content="Engineer is an annual technical symposium in India organized by NITK Surathkal." >
+<meta name="keywords" content="engineer, nitk, nit surathkal, Engineer, college festivals,tech Fest,workshops , Events, indian enginering colleges, nit, incident,engi" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Load Favicon -->
+  <link rel="shortcut icon" href="img/penrose.png">
+
+<!--  Facebook Open Graph Tags  -->
+    <meta property="og:title" content="Engineer 2014 | South India's Largest College Tech Festival">
+    <meta property="og:type" content="non_profit">
+    <meta property="og:url" content="http://www.Engineer.org">
+    <meta property="og:site_name" content="Engineer 2014">
+    <meta property="og:description" content="Engineer 2014: NITK presents South India's Largest Science and Technology Festival">
+	
+<!--jQuery Scripts-->
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/animation.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="js/jquery.easing.1.3.js" type="text/javascript" charset="UTF-8"></script>
+<script src="js/enscroll-0.6.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/modernizr.custom1.js"></script>
+<script type="text/javascript" src="js/modernizr.custom2.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+<script>
+$(document).ready(function(){
+$('.tip').tooltip();
+});
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(13.011879,74.793683);
+var marker;
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:7,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("map_canvas"),mapProp);
+
+marker=new google.maps.Marker({
+  position:myCenter,
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+	<script>
+    (function($){
+        $(window).load(function(){
+            $(".cont_map").mCustomScrollbar(
+			{
+			axis:"yx",
+			theme:"minimal-dark",
+			});
+        });
+    })(jQuery);
+</script>
+  
+<!--CSS-->  
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="workshop.css" rel="stylesheet" />
+  <link href="css/scroller.css" rel="stylesheet" />
+  <link rel="stylesheet" href="js/jquery.mCustomScrollbar.css" />
+  <link href="css/main.css" rel="stylesheet" />
+   <style type="text/css">
+      .cntSeparator {
+        font-size: 54px;
+        margin: 5px 7px;
+        color: #000;
+      }
+      .desc { 
+	  margin: 3px 1px; }
+     .desc div {	  
+        float: left;
+        font-family: Arial;
+        width: 70px;
+        margin-right: 64px;
+        font-size: 23px;
+        font-weight: bold;
+        color: #000;
+      }
+	 	 h3{
+		 text-align:center;
+		 }
+	 
+#map_canvas {
+        width: 90%;
+        height: 360px;
+      }
+	  .cont_map{
+	  padding:8px;
+	  height:420px;
+	  overflow:auto;
+	 // overflow-x:auto;
+	  }
+	  .dist_table{
+	  width:100%;
+	  }
+	  .dist_table > tbody >tr >td{
+	 //background-color:red;
+	 // opacity:0.8;
+	 padding:6px;
+	  }
+	
+	 ul b{
+	 margin-left:-4%;
+	 }
+	 
+	 .marg{
+	 margin-left:2px;;
+	 margin-right:0;
+	 padding:4px;
+	 }
+    </style>
+
+ </head>
+
+<body onload="initialize()">
+<div class="container-fluid bod" >
+<div class="row" style="padding:5px">
+<div class="col-md-6 margin_banner" >
+<img src="NITK_ENgi.png" class="img-responsive" />
+</div>
+</div>
+
+<div class="row">
+  <nav class="navbar navbar-default nav_custm" role="navigation">
+  <div class="container-fluid">
+   
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+	  
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+           <ul class="nav navbar-nav" style="margin-left:18%">
+
+<li class="cl-effect-10"><a data-hover="Workshops" href="workshop.html">
+<span>Workshops</span></a></li>
+<li class="cl-effect-10 events"><a data-hover="Events" href="events.html">
+<span>Events</span></a></li>
+<li class="cl-effect-10"><a data-hover="Tech Nites"  href="http://technites.engineer.org.in">
+<span>Tech Nites</span></a></li>
+<li class="cl-effect-10 events"><a data-hover="Tech Speaks" href="techspeak.html">
+<span>Tech Speaks</span></a></li>
+<li class="cl-effect-10 events"><a data-hover="Hospitality" href="accom.html">
+<span>Hospitality</span></a></li>
+<li class="cl-effect-10 events"><a data-hover="Sponsors" href="sponsors.html">
+<span>Sponsors</span></a></li>
+<li class="cl-effect-10 events"><a data-hover="Campus Ambassador" href="http://www.engineer.org.in/CA.html">
+<span>Campus Ambassador</span></a></li>
+<li class="cl-effect-10 events"><a data-hover="Contacts" href="contact.html">
+<span>Contacts</span></a></li>
+      </ul> 
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+<div class=" row container-fluid">
+<h3><u>NITK Map</u></h3>
+<div class="col-md-7 cont_map">
+<div class="row marg">
+<h4>Location</h4>
+<p>
+NITK lies on the coastal belt of Karnataka, on the National Highway 66, at about 22 kms from Mangalore towards Udupi. It lies close to Mangalore International Airport, Mangalore Railway Station and the Mangalore Port. Bus Routes from Mumbai, Goa and Bangalore ( that terminate at Udupi-Manipal) pass through the College and visitors can disembark right away.
+</p>
+</div>
+<div class="row table-responsive marg">
+<h4>Distance from Popular Source Points (approx.)</h4>
+<table class="table table-striped dist_table">
+<tr>
+<td>From Mangalore Airport:</td>
+<td>20 KM</td>
+</tr>
+<tr>
+<td>From Mangalore Central Railway Station:</td>
+<td>21 KM</td>
+</tr>
+<tr>
+<td>From Mangalore Junction Railway Station:</td>
+<td>25 KM</td>
+</tr>
+<tr>
+<td>From Surathkal Railway Station:</td>
+<td>04 KM</td>
+</tr>
+<tr>
+<td>From Mangalore Bus stand:</td>
+<td>20 KM</td>
+</tr>
+<tr>
+<td>From Udupi Bus Stand:</td>
+<td>35 KM</td>
+</tr>
+</table>
+</div>
+<div class="row table-responsive marg">
+<h4>Travel Time and distance from other cities</h4>
+<table class="table table-striped dist_table">
+<thead>
+<th>By Bus</th>
+<th>By Train</th>
+<th>By Air</th>
+</thead>
+<tr>
+<td>From Mumbai: 22 hrs</td>
+<td>From Mumbai: 18 hrs</td>
+<td>From Mumbai: 1 hr 20 mins</td>
+</tr>
+<tr>
+<td>From Bangalore: 7 hrs</td>
+<td>From Bangalore: 12hrs</td>
+<td>From Bangalore: 40 mins</td>
+</tr>
+<tr>
+<td>from Mysore: 7hrs</td>
+<td>From Thiruvananthapuram: 18 hrs</td>
+<td></td>
+</tr>
+<tr>
+<td>From Goa: 8hrs</td>
+<td>From Chennai: 18hrs</td>
+<td></td>
+</tr>
+<tr>
+<td>From Ernakulum: 10hrs</td>
+<td>From Ernakulam: 9hrs</td>
+<td></td>
+</tr>
+<tr>
+<td>From Hyderabad: 24hrs</td>
+<td>From Kolkata(via Chennai): 50hrs</td>
+<td></td>
+</tr>
+<tr>
+<td>From Bijapur: 14hrs</td>
+<td>From Guwahati(via Kolkata): 72hrs</td>
+<td></td>
+</tr>
+<tr>
+<td>From Hubli: 7hrs</td>
+<td>From New Delhi: 40hrs</td>
+<td></td>
+</tr>
+<tr>
+<td>From Belgaum: 9hrs</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+</div>
+<div class="row marg">
+<h4>Reaching NITK from Nearby Places</h4>
+<ul><b>From Mangalore Railway Station</b>
+<li> All Express buses to Udupi, Manipal or Karkala drop you at the College NITK Express Bus Stop which is closer to the Administrative Block, Departments, Girls Hostel Block, and the Guest House.</li></ul>
+<ul><b>From Mangalore Bus stand</b>
+<li> All Service/Express Buses starting from Mangalore Bus Stand and going towards Udupi, stop at NITK Main Building.</li>
+ <li>A number of Private Taxis also available at Mangalore. NITK is 21 Kms. from Mangalore on the northern side on National Highway No.66</li></ul>
+<ul><b>From Surathkal Railway Station</b>
+<li> Passengers alighting at Surathkal station can engage auto rickshaws that will take them to the college 2 km's from the Station for Rs.40/-.</li>
+<li> Further, one could also reach Surathkal Bus Stand and board regular service buses that ply via the college.</li></ul>
+</div>
+</div>
+<div class="col-md-5">
+<div class="row marg">
+<div id="map_canvas">
+</div>
+</div>
+<div>
+<br>
+   <form action="http://maps.google.com/maps" method="get" target="_blank"><input class="button_medium" value="Get directions" type="submit"><input class="span2" name="saddr" placeholder="Enter your location" type="text"><input name="daddr" value="National Institute of Technology Karnataka, Srinivasnagar, Mangalore, Karnataka" type="hidden"><!-- Write here your end point -->&nbsp;</form>
+</div>
+
+
+</div>
+</div>
+ 
+ <div class="row footr">
+<div class="col-md-4 col-md-offset-4 foot_img">
+<div class="row">
+<div class="col-md-2 col-xs-2 "><a href="https://www.facebook.com/EngineerNITK">
+<img class="img-responsive tip" src="images/fb.png" data-toggle="tooltip" data-placement="top" title="Facebook" /></a>
+</div>
+<div class="col-md-2 col-xs-2 "><a href="https://twitter.com/Engineer_NITK">
+<img class="img-responsive tip" src="images/twitter.png" data-toggle="tooltip" data-placement="top" title="Twitter" /></a>
+</div>
+<div class="col-md-2 col-xs-2 "><a href="https://youtube.com/user/engineernitk">
+<img class="img-responsive tip" src="images/yt.png" data-toggle="tooltip" data-placement="top" title="Youtube"/></a>
+</div>
+<div class="col-md-2 col-xs-2 "><a href="about.html">
+<img class="img-responsive tip" src="images/about.png" data-toggle="tooltip" data-placement="top" title="About us" /></a>
+</div>
+<div class="col-md-2 col-xs-2 "><a href="reach.html">
+<img class="img-responsive tip" src="images/map.png" data-toggle="tooltip" data-placement="top" title="Map" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html> 

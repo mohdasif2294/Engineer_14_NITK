@@ -1,0 +1,258 @@
+@font-face {
+  font-family:'spaceage';
+  src: url('../font/spaceage.eot?') format('eot'), 
+  url('../font/spaceage.woff') format('woff'), 
+  url('../font/spaceage.ttf') format('truetype');
+}
+
+
+body{
+	height: 100%;
+	width: 100%;
+}
+.navbar-nav > li > a:hover {
+   // color: white !important;
+}
+.navbar-nav > li:hover {
+   // background-color: black;
+    //font-size: 16px;
+}
+.right_bar{
+	//height:50%;
+	//float:right;
+	//margin-right:12%;
+	//margin-top:5%;
+	//overflow: scroll;
+}
+
+.marquee {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #ccc;
+  margin-top:-1.7%;
+}
+
+.main_content {
+margin-top:2%;
+//max-height:10%;`
+}
+
+.center_content {
+//background-color:teal;
+overflow:auto;
+height:440px;
+
+}
+
+.left_bar {
+overflow:auto;
+margin-left:1.4%;
+
+}
+
+.sponsor_row {
+margin-bottom:1.7%;
+padding:2px;
+}
+
+.portfolio {
+  text-align: center;
+  background-color:white;
+}
+  .portfolio .pentagon {
+    float: left;
+   // margin: 20px;
+    width: 205px;
+	
+	position:relative;
+  }
+    .pentagon .portfolio-title {
+      position: relative;
+      float: left;
+      width: 100%;
+      height: 60px;
+      overflow: hidden;
+      margin-top: 15px;
+	  font-size:14px !important;
+	  font-family:Helvetica;
+    }
+      .pentagon .portfolio-title h4 {
+        position: relative;
+        line-height: 20px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+        color: red;
+      }
+        .portfolio-title h4 span {
+          width: 100%;
+          position: absolute;
+          margin: 0 auto;
+          left: 0;
+          color: #4EA838;
+          top: 60px;
+        }
+    .portfolio .pentagon a {
+      float: left;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      display: block;  
+      position: relative;
+    }
+      .portfolio .pentagon a img {
+        position: absolute;
+        left: -75px;
+        top: 0;
+        -webkit-filter: grayscale(100%);
+      	-moz-filter: grayscale(100%);
+      	-o-filter: grayscale(100%);
+      	-ms-filter: grayscale(100%);
+      	filter: grayscale(100%);
+        -webkit-transition: 300ms ease-out;
+      	-moz-transition: 300ms ease-out;
+      	-o-transition: 300ms ease-out;
+      	transition: 300ms ease-out;
+      	-webkit-backface-visibility: hidden;
+      }
+      .portfolio .pentagon a img.hovering {
+        left: -50px;
+        -webkit-filter: grayscale(0%);
+      	-moz-filter: grayscale(0%);
+      	-o-filter: grayscale(0%);
+      	-ms-filter: grayscale(0%);
+      	filter: grayscale(0%);
+      }
+      .portfolio .pentagon a span.mask {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        z-index: 2;
+        background: url("../images/pentagon_mask.png") no-repeat !important;
+        -webkit-transition:-webkit-transform 300ms ease-out;
+      	-moz-transition:-moz-transform 300ms ease-out;
+      	-o-transition:-o-transform 300ms ease-out;
+      	transition:transform 300ms ease-out;
+      	-webkit-backface-visibility: hidden;
+      }
+      .portfolio .pentagon a span.mask:hover{
+      	-webkit-transform:rotate(30deg);
+      	-moz-transform:rotate(30deg);
+          -ms-transform:rotate(30deg);
+      	-o-transform:rotate(30deg);
+      	transform:rotate(30deg);
+      }
+.portfolio > h1 {
+font-family:spaceage !important;
+font-size:36px !important;
+}
+	
+nav a {
+	position: relative;
+	display: inline-block;
+	//margin: 15px 25px;
+	outline: none;
+	color: #666;
+	//text-decoration: none;
+	//text-transform: uppercase;
+	//letter-spacing: 1px;
+	//font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	//font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+/* Effect 10: reveal, push out */
+.cl-effect-10  {
+	position: relative;
+	z-index: 1;
+}
+
+.cl-effect-10 a {
+	overflow: hidden;
+	//color:white;
+	//margin: 0 15px;
+}
+
+.cl-effect-10 a span {
+	display: block;
+	padding: 4px 5px;
+	background: #666;
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+	//overflow:hidden;
+}
+
+.cl-effect-10 a::before {
+	position: absolute;
+	//top: 0;
+	//left: 0;
+	z-index: -1;
+	padding: 4px 5px;
+	//width: 100%;
+	//height: 100%;
+	background: #666;
+	color: #cccccc;
+	content: attr(data-hover);
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateX(-25%);
+}
+
+.cl-effect-10 a:hover span,
+.cl-effect-10 a:focus span {
+	-webkit-transform: translateX(141%);
+	-moz-transform: translateX(141%);
+	transform: translateX(141%);
+}
+
+.cl-effect-10 a:hover::before,
+.cl-effect-10 a:focus::before {
+	-webkit-transform: translateX(0%);
+	-moz-transform: translateX(0%);
+	transform: translateX(0%);
+}
+
+.campus{
+//background-color:black;
+background-image:url('images/SBI.jpg');
+}
+.content_1{
+//border-color:white;
+//border-width:2px;
+border-radius:3px;
+//border-style:solid;
+color:white;
+font-size:15px;
+background-color:#00d0ba;
+margin-top:1%;
+font-family:Helvetica;
+padding:0.7%;
+padding-top:1.1%;
+padding-bottom:0.4%;
+padding-left:1.6%;
+font-weight:400;
+//box-shadow:white 4px 5px 2px 4px;
+line-height:18px;
+}
+
+.mai_con{
+background-color:white;
+color:#00d0ba;
+margin-top:14%;
+padding:2%;
+border-radius:8px;
+text-align:center
+}
+.content_1 li{
+list-style:square;
+}
+

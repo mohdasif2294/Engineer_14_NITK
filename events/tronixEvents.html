@@ -1,0 +1,57 @@
+<script>
+	$(".content").load("events/tronixEvents/trailblaze.html")
+	$('.trailBlaze a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/tronixEvents/trailblaze.html")
+	})
+	$('.automata a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/tronixEvents/automata.html")
+	})
+	$('.simplicity a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/tronixEvents/simplicity.html")
+	})
+	$('.tradeOff a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/tronixEvents/tradeOff.html")
+	})
+	$('.foxHunt a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/tronixEvents/foxHunt.html")
+	})
+	$('.symphony a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/tronixEvents/symphnoy.html")
+	})
+	$('.waltz a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/tronixEvents/waltz.html")
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="tronixEvents">
+	<img class="img-responsive" style="height:15em;width:100%;" src="img/Electronix.jpg"/>
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="trailBlaze"><a href="#">TRAILBLAZER</a></li>
+		<li class="automata"><a href="#">Automata</a></li>
+		<li class="simplicity"><a href="#">Simplicity</a></li>
+		<li class="tradeOff"><a href="#">Trade Off</a></li>
+		<li class="foxHunt"><a href="#">Fox Hunt</a></li>
+		<li class="symphony"><a href="#">Symphony</a></li>
+		<li class="waltz"><a href="#">Waltz</a></li>
+	</ul>
+	<div class="content">
+	</div>
+</div>

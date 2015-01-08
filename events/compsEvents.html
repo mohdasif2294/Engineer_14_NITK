@@ -1,0 +1,45 @@
+<script>
+	$(".content").load("events/compsEvents/inscription.html")
+	$('.codeCombat a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/compsEvents/codecombat.html")
+	})
+	$('.inscription a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/compsEvents/inscription.html")
+	})
+	$('.rectify a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/compsEvents/rectify.html")
+	})
+	$('.marathon a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/compsEvents/marathon.html")
+	})
+	$('.virtualBounty a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/compsEvents/virtualBounty.html")
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="compsEvents">
+	<img class="img-responsive img-rounded" style="height:15em;width:100%;" src="img/Comps.jpg"/>
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="inscription"><a href="#">Inscription</a></li>
+		<li class="codeCombat"><a href="#">Code Combat</a></li>
+		<li class="rectify"><a href="#">Rectify</a></li>
+		<li class="marathon"><a href="#">Marathon</a></li>
+		<li class="virtualBounty"><a href="#">Virtual Bounty</a></li>
+	</ul>
+	<div class="content">
+	</div>
+</div>

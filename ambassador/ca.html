@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+<head>
+<title>Engineer 2014</title>
+<!--Meta-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >  
+<meta charset="UTF-8" > 
+<meta name="language" content="english" >
+<meta name="description" content="Engineer is an annual technical symposium in India organized by NITK Surathkal." >
+<meta name="keywords" content="engineer, nitk, nit surathkal, Engineer, college festivals,tech Fest,workshops , Events, indian enginering colleges, nit, incident,engi" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Load Favicon -->
+  <link rel="shortcut icon" href="img/penrose.png">
+
+<!--  Facebook Open Graph Tags  -->
+    <meta property="og:title" content="Engineer 2014 | South India's Largest College Tech Festival">
+    <meta property="og:type" content="non_profit">
+    <meta property="og:url" content="http://www.Engineer.org">
+    <meta property="og:site_name" content="Engineer 2014">
+    <meta property="og:description" content="Engineer 2014: NITK presents South India's Largest Science and Technology Festival">
+	
+<!--jQuery Scripts-->
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript" charset="UTF-8"></script>
+<script src="js/modernizr.js"></script>
+
+
+<!--CSS-->  
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app-min1.css" />
+<style>
+legend,.legen {
+        color: white;
+        font-size:16px;
+		
+       // padding:0 10px;
+        background:#00d0ba;
+        border-radius:3px;
+        //box-shadow: 0 1px 5px #00d0ba;
+        padding:5px 10px;
+        text-transform:uppercase;
+        font-family:Helvetica, sans-serif;
+        font-weight:bold;
+    }
+    fieldset {
+        border-radius:4px;
+        background: #fff; 
+        background: -moz-linear-gradient(#fff, #f9fdff);
+        background: -o-linear-gradient(#fff, #f9fdff);
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f9fdff)); 
+        background: -webkit-linear-gradient(#fff, #f9fdff);
+        padding:18px;
+        border-color:rgba(4, 129, 177, 0.4);
+		padding-bottom:4px;
+    }
+    input,textarea {
+        color: #009282;
+        background: #fff;
+        border: 1px solid #CCCCCC;
+        font-size: 14px;
+        line-height: 1.2em;
+        margin-bottom:15px;
+
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;
+        border-radius:4px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+    input[type="text"], input[type="password"],input[type="email"]{
+        padding: 8px 6px;
+        //height: 22px;
+        width:100%;
+    }
+    input[type="text"]:focus,input[type="password"]:focus,input[type="email"]:focus {
+        background:#f5fcfe;
+        text-indent: 0;
+        z-index: 1;
+        color:#009282;
+        -webkit-transition-duration: 400ms;
+        -webkit-transition-property: width, background;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-duration: 400ms;
+        -moz-transition-property: width, background;
+        -moz-transition-timing-function: ease;
+        -o-transition-duration: 400ms;
+        -o-transition-property: width, background;
+        -o-transition-timing-function: ease;
+       width: 105%;
+        
+        border-color:#ccc;
+        box-shadow:0 0 5px rgba(4, 129, 177, 0.5);
+        opacity:0.6;
+    }
+    input[type="submit"]{
+        background: #00BBA7;
+		font-weight:bold;
+        border: none;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+        text-transform:uppercase;
+        color: #eee;
+        cursor: pointer;
+        font-size: 15px;
+        margin: 5px 0;
+        padding: 5px 22px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-border-radius:4px;
+        -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    }
+	
+	input[type="submit"]:hover{
+	opacity:0.8;
+	}
+	
+    textarea {
+        padding:3px;
+        width:100%;
+        height:120px;
+    }
+    textarea:focus {
+        background:#ebf8fd;
+        text-indent: 0;
+        z-index: 1;
+        color: #373737;
+		width:105%;
+        opacity:0.6;
+        box-shadow:0 0 5px rgba(4, 129, 177, 0.5);
+        border-color:#ccc;
+    }
+    .small {
+        line-height:14px;
+        font-size:12px;
+        color:#999898;
+        margin-bottom:3px;
+    }
+	.reg_form {
+	//float:right;
+	 //width: 800px;
+	}
+	.content_reg {
+	float:left;
+	 font-size: 1.075rem;
+	position:relative;
+	 
+	font-family: sans-serif; !important;
+	 font-weight: 100;
+	}
+	h1{
+	 background-color:#0099FF;
+    font-family:"OldSansBlack", verdana,"Times new roman";
+    font-size: 39px;
+    margin-top: -7px;
+    text-align: center;
+    width: 100%;
+	color:white;
+	}
+	//{
+	//background-color:green !important;
+	//}
+	#myModal{
+	}
+	.btn1 {
+	color:white;
+	background-color:#00d0ba;
+	border-color:#009282;
+	}
+	.btn1:hover,.btn1:active,.btn1:focus{
+	background-color:#66E3d6;
+	}
+</style>
+	
+ </head>
+ 
+<body style="background-color: black;
+    background-image: url('images/campus.png');
+background-repeat:repeat-x;
+background-size:contain">
+<div class="container-fluid " >
+<div class="row container-fluid">
+<div class="col-md-4 col-md-offset-1" style="margin-top:1%">
+<div class="row">
+<img src="images/engi_campus.png" class="img-responsive" />
+</div>
+<div class="row">
+<p class="mai_con">
+Campus Ambassador Program is an opportunity for students to act as liaisons between his/her college and Engineer'14 .<br>
+It aims at connecting all the colleges in India with technology and Innovations. </p>
+</div>
+<div class="row" style="margin-top:5%;">
+<div class="row">
+<div class="col-md-4 col-md-offset-5">
+<button type="button" class="btn btn-info btn1" data-toggle="modal" data-target="#myModal" style="font-weight:bold;font-size:16px;">Apply</button>
+</div>
+</div>
+<div class="row">
+<div class="col-md-8" style="margin-top:3%;margin-left:20%">
+<img src="images/contact_ashu.png" class="img-responsive" />
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-5 col-md-offset-1 content_1">
+<p>Campus Ambassador will have responsibilities pertaining to Engineer'14 at his/her alma mater. Following are the responsibilities :
+</p>
+
+ <ul style="margin-left:-1%;">
+<li style="margin-top:-2.9%">To post Engineer'14 links on their departmental/college/university groups on 
+facebook and other social networking sites.</li>
+<li> Posters will be sent through courier which are to be put at its correct place   
+ like notice boards, etc.</li>
+<li>Give regular updates to our Publicity Team about the status of ENGINEER
+awareness in your respective college and discuss necessary publicity strategy.</li> </ul>
+
+<p>Following are the benefits/incentives that we will be providing to our Campus 
+Ambassadors : </p>
+<ul style="margin-left:-1%;">
+<li style="margin-top:-2.9%"> 50% discount in all workshops</li>
+<li> free accomodation</li>
+<li>Free entry to all pro shows</li>
+<li> Engineer T-shirt</li>
+<li>Engineer goodies </li>
+<li>other coupons worth Rs. 200 </li>
+<li>Free recharge coupon of Rs.100</li> </ul>
+All these benefits will be given only when atleast 10 students from that college 
+participates in offline events.<br><br>
+
+Just like any member of our exclusive team here, we treat our Campus Ambassador 
+with the same respect and trust that a core member enjoys because it takes one to 
+know one.<br><br>
+</div>
+</div>
+<div class="row">
+<div class="col-md-9 col-md-offset-2">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin:6% 20%;">
+  <div class="modal-dialog">
+    
+	<div class="modal-content">
+      <div class="modal-header">
+	  <h3 class="legen">Registration Form</h3>
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       
+      </div>
+<form action="" method="post" class="reg_form">
+			
+            <fieldset>
+             
+                <div class="row">
+				<div class="col-md-6">
+				<div>
+                   <input type="text" name="name" placeholder="Name" required/>
+				</div>
+				 
+				<div>
+                    <input type="text" name="college_name" placeholder="College Name" required/>
+                </div>
+				
+				<div>
+                    <input type="text" name="year" placeholder="Pursuing year" required/>
+                </div>
+				
+				<div>
+                    <input type="text" name="Dept" placeholder="Dept" required/>
+                </div>
+				<div>
+                    <input type="email" name="email" placeholder=" E-mail" required/>
+                </div>
+				<div>
+                    <input type="text" name="contact" placeholder="Contact No." required/>
+                </div>
+				</div>
+				<div class="col-md-6">
+				<div>
+                    <textarea type="text" name="addr" placeholder="Current Address" required></textarea>
+                </div>
+				<div>
+                    <input type="text" name="city" placeholder="City" required/>
+                </div>
+				<div>
+                    <input type="text" name="pin" placeholder="Pin Code" required/>
+                </div>
+				 <div>
+                    <input type="text" name="state" placeholder="State" required/>
+                </div>
+				
+				</div>
+				</div>
+                    <div class="row" style="text-align:center"	>			
+                <input type="submit" name="submit" value="Submit"/>
+				</div>
+            </fieldset>    
+        </form>
+</div>
+</div>
+</div>
+</div>
+</div>		
+</div>
+</body>
+</html>

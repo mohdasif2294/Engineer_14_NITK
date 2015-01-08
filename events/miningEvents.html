@@ -1,0 +1,51 @@
+<script>
+	$(".content").load("events/miningEvents/mineRush.html")
+	$('.mineRush a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/miningEvents/mineRush.html")
+	})
+	$('.mineQuest a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/miningEvents/mineQuest.html")
+	})
+	$('.mineProblem a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/miningEvents/mineProblem.html")
+	})
+	$('.innovation a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/miningEvents/innovation.html")
+	})
+	$('.blastMine a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/miningEvents/blastMine.html")
+	})
+	$('.hangman a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/miningEvents/hangman.html")
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="miningEevnts">
+	<img class="img-responsive" style="height:15em;width:100%;" src="img/Mining.jpg"/>
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="mineRush"><a href="#">Mine Rush</a></li>
+		<li class="mineProblem"><a href="#">Adverse Mining Problem</a></li>
+		<li class="mineQuest"><a href="#">Mine Quest</a></li>
+		<li class="innovation"><a href="#">Mining Innovation</a></li>
+		<li class="blastMine"><a href="#">Ventilation Blast Mine</a></li>
+		<li class="hangman"><a href="#">Hangman</a></li>
+	</ul>
+	<div class="content">
+	</div>
+</div>

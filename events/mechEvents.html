@@ -1,0 +1,45 @@
+<script>
+	$(".content").load("events/mechEvents/roboWars.html")
+	$('.wars a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/mechEvents/roboWars.html")
+	})
+	$('.machine a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/mechEvents/perfectMachine.html")
+	})
+	$('.flight a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/mechEvents/wrightFlight.html")
+	})
+	$('.proteous a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/mechEvents/proteous.html")
+	})
+	$('.velocity a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		$(".content").load("events/mechEvents/velocity.html")
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="mechEvents">
+	<img class="img-responsive" style="height:15em;width:100%;" src="img/Mech.jpg"/>
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="wars"><a href="#">Robo Wars</a></li>
+		<li class="machine"><a href="#">Perfect Machine</a></li>
+		<li class="flight"><a href="#">Wright Flight</a></li>
+		<li class="proteous"><a href="#">Proteus</a></li>
+		<li class="velocity"><a href="#">Velocity</a></li>
+	</ul>
+	<div class="content">
+	</div>
+</div>
